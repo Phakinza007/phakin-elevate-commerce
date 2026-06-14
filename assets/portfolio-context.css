@@ -1,0 +1,56 @@
+.portfolio-context {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 9400;
+  display: inline-flex;
+  width: max-content;
+  max-width: calc(100vw - 32px);
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  font-family: "Bai Jamjuree", "Noto Sans Thai", Arial, sans-serif;
+}
+
+.portfolio-context,
+.portfolio-context * {
+  box-sizing: border-box;
+}
+
+.portfolio-back {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  white-space: nowrap;
+  border-radius: 8px;
+  padding: 0 13px;
+  background: oklch(56% 0.19 256);
+  color: oklch(98% 0.012 65);
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 12px 24px oklch(56% 0.19 256 / 0.2);
+}
+
+.portfolio-back:focus-visible {
+  outline: 3px solid oklch(56% 0.19 256 / 0.36);
+  outline-offset: 3px;
+}
+
+@media (max-width: 680px) {
+  .portfolio-context {
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .portfolio-back {
+    min-height: 42px;
+  }
+}
